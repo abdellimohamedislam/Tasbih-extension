@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tasbih Reminder</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input { width: 70px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #d4fc79, #96e6a1);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      padding: 20px 30px;
+      text-align: center;
+      width: 90%;
+      max-width: 300px;
+    }
+
+    .card h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #2f855a;
+    }
+
+    .card p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #4a5568;
+    }
+
+    .subtle {
+      font-size: 0.85rem;
+      color: #718096;
+      margin-top: 15px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+  </style>
+</head>
+<body>
+    <div class="card">
+    <h1>🤲 Assalamu Alaikum</h1>
+    
+    <p style="font-size: 1.4rem; font-weight: bold; color: #1a202c;">SubhanAllah</p>
+    <div class="subtle">Keep your tongue moist with Dhikr </div>
+  
+  <h3>Set Interval (mins)</h3>
+  <input type="number" id="interval" min="1" />
+  <button id="save">Save</button>
+  <p id="status"></p>
+</div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+  

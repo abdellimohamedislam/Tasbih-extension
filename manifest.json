@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Colorful Dhikr Reminder",
+  "version": "1.1",
+  "description": "Periodic, colorful reminders to say Istighfar or Tasbih.",
+  "permissions": ["alarms", "storage", "tabs", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icons/icon.png"
+  }
+}
